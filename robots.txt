@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gangsstar3.github.io/client-closer-kit/sitemap.xml
