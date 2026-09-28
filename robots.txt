@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gangsstar3.github.io/client-closer-kit/sitemap.xml
+Sitemap: https://client-closer-kit-margin5.vercel.app/sitemap.xml
