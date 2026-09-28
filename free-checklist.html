@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Free follow-up checklist (Client Closer Kit)</title>
+<meta name="robots" content="index, follow"/>
+<meta name="description" content="A free one-page follow-up checklist for freelancers after a discovery call. Same-day reply, notes, a short silence cadence, and stop rules. No income guarantees."/>
+<style>
+:root{--bg:#0b0f14;--card:#121821;--text:#e8eef6;--muted:#9aa8b8;--accent:#5eead4;--accent2:#38bdf8;--line:#1e293b}
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:radial-gradient(1200px 600px at 10% -10%,#132033,transparent),var(--bg);color:var(--text);line-height:1.45}
+a{color:var(--accent2)}
+.wrap{max-width:760px;margin:0 auto;padding:28px 20px 48px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+.badge{display:inline-block;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);border:1px solid #134e4a;background:#042f2e;padding:6px 10px;border-radius:999px}
+h1{font-size:clamp(1.55rem,3.5vw,2.05rem);line-height:1.15;margin:12px 0 8px}
+.sub{color:var(--muted);font-size:.98rem;margin:0 0 14px;max-width:40rem}
+.meta{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0 0 16px;color:var(--muted);font-size:.92rem}
+.meta span{border-bottom:1px solid #334155;min-width:11rem;padding-bottom:2px}
+.sheet{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 16px 10px}
+.section{border-top:1px solid var(--line);padding:9px 0 8px}
+.section:first-child{border-top:0}
+.section h2{font-size:1rem;line-height:1.35;margin:0;font-weight:700}
+.row{display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+.row input{appearance:none;-webkit-appearance:none;width:18px;height:18px;margin:1px 0 0;border:2px solid var(--accent);border-radius:4px;background:transparent;flex:none;cursor:pointer}
+.row input:checked{background:var(--accent);box-shadow:inset 0 0 0 3px var(--card)}
+.row input:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+.hint{color:var(--muted);font-size:.9rem;margin:4px 0 0 30px}
+.subs{list-style:none;margin:6px 0 0 30px;padding:0}
+.subs li{margin:4px 0}
+.subs .row{font-size:.95rem;font-weight:500}
+.note{margin:6px 0 0 30px;color:var(--muted);font-size:.88rem}
+.cta{margin-top:18px;border:1px solid #115e59;background:#042f2ecc;border-radius:16px;padding:16px 18px}
+.cta h2{margin:0 0 6px;font-size:1.05rem}
+.cta p{margin:0 0 12px;color:var(--muted);font-size:.92rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
+.btn{appearance:none;border:0;border-radius:12px;padding:12px 16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-size:.95rem}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#042f2e}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.back{margin:14px 0 0;font-size:.9rem}
+footer{margin-top:22px;color:var(--muted);font-size:.85rem}
+footer p{margin:0 0 8px}
+.print-btn{font:inherit}
+@media (max-width:520px){
+  .wrap{padding:20px 14px 36px}
+  .cta-row{display:grid}
+  .btn{text-align:center;width:100%}
+}
+@media print{
+  @page{size:A4;margin:11mm}
+  body{background:#fff;color:#111}
+  a{color:#111;text-decoration:none}
+  .wrap{max-width:none;padding:0}
+  .badge{color:#0f766e;border-color:#99f6e4;background:#f0fdfa}
+  .sub,.hint,.note,footer{color:#333}
+  .sheet{background:#fff;border-color:#ccc;border-radius:0;padding:0}
+  .section{border-color:#ddd;break-inside:avoid}
+  .row input{border-color:#111}
+  .row input:checked{background:#111;box-shadow:inset 0 0 0 3px #fff}
+  .meta span{border-color:#111}
+  .no-print{display:none!important}
+  .print-foot{color:#222}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <span class="badge">Free sample · one page</span>
+    <button class="btn btn-ghost print-btn no-print" type="button" onclick="window.print()">Print</button>
+  </div>
+  <h1>Free follow-up checklist (Client Closer Kit)</h1>
+  <p class="sub">Use this after a discovery call. Reply clearly, write down what you heard, and stop when they say no. It is a process checklist — not a promise of clients, revenue, or a close rate.</p>
+  <p class="meta">
+    <span>Client: _______________</span>
+    <span>Call date: ____________</span>
+  </p>
+
+  <form class="sheet" action="#" onsubmit="return false">
+    <section class="section">
+      <h2><label class="row"><input type="checkbox" name="same-day-reply"/><span>Same-day reply with 2–3 time windows or a booking link</span></label></h2>
+      <p class="hint">Answer the same day. Offer two or three specific times, or one booking link. Skip a long questionnaire before a time is on the calendar.</p>
+    </section>
+
+    <section class="section">
+      <h2><label class="row"><input type="checkbox" name="agenda"/><span>One-sentence agenda before the call</span></label></h2>
+      <p class="hint">Send one sentence: what you will cover, and how long it will take.</p>
+    </section>
+
+    <section class="section">
+      <h2><label class="row"><input type="checkbox" name="notes"/><span>Notes: pain, budget signal, decision-maker, next step</span></label></h2>
+      <p class="hint">Write only what they actually said. A budget signal is a clue they offered, not a number you pressure out of them.</p>
+      <ul class="subs">
+        <li><label class="row"><input type="checkbox" name="pain"/><span>Pain — the problem they want solved</span></label></li>
+        <li><label class="row"><input type="checkbox" name="budget"/><span>Budget signal — range, constraint, or “not discussed”</span></label></li>
+        <li><label class="row"><input type="checkbox" name="decision"/><span>Decision-maker — who says yes, if it is not them</span></label></li>
+        <li><label class="row"><input type="checkbox" name="next"/><span>Next step — the action you both named</span></label></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2><label class="row"><input type="checkbox" name="follow-up"/><span>Same-day follow-up: next step + price range</span></label></h2>
+      <p class="hint">The same day as the call, send the next step and a price range. If you do not know a number yet, say what it depends on. Do not send “just checking in” with nothing new.</p>
+    </section>
+
+    <section class="section">
+      <h2><label class="row"><input type="checkbox" name="silence"/><span>If silence: day 3 / day 7 touch (no guilt-tripping)</span></label></h2>
+      <p class="hint">Two short notes, then stop. No daily pings, no “I noticed you went quiet,” no guilt.</p>
+      <ul class="subs">
+        <li><label class="row"><input type="checkbox" name="day3"/><span>Day 3 — one short note that restates the next step</span></label></li>
+        <li><label class="row"><input type="checkbox" name="day7"/><span>Day 7 — one last useful note, then leave it</span></label></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2><label class="row"><input type="checkbox" name="stop"/><span>Stop rules: they said no / asked to pause / no fit</span></label></h2>
+      <p class="hint">Stopping is the professional move. Do not add another bump.</p>
+      <ul class="subs">
+        <li><label class="row"><input type="checkbox" name="said-no"/><span>They said no</span></label></li>
+        <li><label class="row"><input type="checkbox" name="pause"/><span>They asked you to pause</span></label></li>
+        <li><label class="row"><input type="checkbox" name="no-fit"/><span>The work is not a fit</span></label></li>
+      </ul>
+      <p class="note">If any of these is true, the checklist is finished.</p>
+    </section>
+  </form>
+
+  <aside class="cta no-print">
+    <h2>Full scripts + templates</h2>
+    <p>Starter €29 · Complete €47. Copy for the messages above, a simple pipeline, and a pricing sheet. Results depend on your offer, niche, and follow-through.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="index.html#pay">Complete — €47</a>
+      <a class="btn btn-ghost" href="index.html#pay">Starter — €29</a>
+      <a class="btn btn-ghost" href="https://www.getly.store/product/client-closer-kit-starter" rel="noopener">Getly Starter ($29)</a>
+    </div>
+    <p class="back"><a href="index.html">Client Closer Kit</a></p>
+  </aside>
+
+  <footer class="print-foot">
+    <p>This is a free sample. Full scripts + templates: <a href="https://gangsstar3.github.io/client-closer-kit/">Client Closer Kit</a>. <a href="https://www.getly.store/product/client-closer-kit-starter" rel="noopener">Getly Starter ($29)</a>.</p>
+    <p>No income or client results are promised. Follow-up means a short, useful note — not a reason to keep writing after someone says no, asks you to pause, or is not a fit.</p>
+  </footer>
+</div>
+</body>
+</html>
