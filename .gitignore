@@ -1,0 +1,9 @@
+# Buyer emails, drafted MIME, and local delivery state
+logs/
+delivery-out/
+
+# Paid kit archives. Placeholder notes in kits/ stay tracked.
+kits/*.zip
+
+__pycache__/
+*.pyc
