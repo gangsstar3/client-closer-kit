@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Client Closer Kit — Close freelance deals you already deserve</title>
 <meta name="robots" content="index, follow"/>
+<meta property="og:image" content="https://client-closer-kit.surge.sh/listing-og.png"/>
 <meta name="description" content="Freelance follow-up scripts and a client closing checklist for proposals, objections, pricing, and invoices. Starter or Complete digital kit, delivered by email after USDT payment."/>
 <style>
 :root{--bg:#0b0f14;--card:#121821;--text:#e8eef6;--muted:#9aa8b8;--accent:#5eead4;--accent2:#38bdf8;--line:#1e293b}
@@ -57,7 +58,6 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
     <a class="btn btn-ghost" href="https://www.getly.store/product/client-closer-kit-complete" rel="noopener">Buy Complete on Getly ($47)</a>
   </div>
   <p class="trust">Direct USDT TRC20 (fastest) · or Getly checkout · Delivery by email / download · 14‑day fit guarantee</p>
-  <p class="trust"><a href="free-checklist.html">Free follow-up checklist</a></p>
   <p class="trust" id="book">Optional: <a href="https://refer.cal.com/oleksii-kuznietsov-sqmm" rel="sponsored noopener">Book a 15-minute call</a> if talking it through is easier. This is a Cal.com affiliate link; I may earn a commission at no extra cost to you. No need to book—email is fine.</p>
 
   <div class="proof" id="listed">
@@ -212,5 +212,30 @@ footer{margin-top:48px;color:var(--muted);font-size:.85rem}
     </div>
   </div>
 </div>
+<!-- confetti-cck -->
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script>
+/* confetti-cck: celebrate CTA / payment intent on Client Closer Kit */
+(function () {
+  function burst(origin) {
+    if (typeof confetti !== 'function') return;
+    confetti({ particleCount: 110, spread: 55, origin: origin || { y: 0.7 }, colors: ['#5eead4', '#38bdf8', '#f472b6', '#fbbf24'] });
+  }
+  function wire(sel) {
+    document.querySelectorAll(sel).forEach(function (el) {
+      el.addEventListener('click', function () {
+        var r = el.getBoundingClientRect();
+        burst({ x: (r.left + r.width / 2) / window.innerWidth, y: (r.top + r.height / 2) / window.innerHeight });
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    wire('a.btn-primary, a.btn-ghost[href="#pay"], a.btn-primary[href="#pay"]');
+    wire('.sticky-cta a.btn');
+  });
+})();
+</script>
+
 </body>
 </html>
