@@ -1,0 +1,26 @@
+name: Delivery helper dry-run
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unit checks
+        run: python3 scripts/test_deliver_kit.py
+      - name: Dry-run starter
+        run: |
+          python3 scripts/deliver_kit.py --dry-run \
+            --tier starter \
+            --txid 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef \
+            --delivery-email buyer@example.com \
+            --amount 29
+      - name: Dry-run complete
+        run: |
+          python3 scripts/deliver_kit.py --dry-run \
+            --tier complete \
+            --txid abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789 \
+            --delivery-email buyer@example.com
